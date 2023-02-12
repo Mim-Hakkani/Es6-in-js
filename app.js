@@ -167,4 +167,15 @@ const ReduceNumber = [1,2,3,4,5]
 
 
 
+const objectData = {
+  name : 'mim',
+  id   : 150132,
+  designation : "react developer "
+}
+
+
+const allKey = Object.keys(objectData) //  [ 'name', 'id', 'designation' ]
+
+const allValues  = Object.values(objectData) // [ 'mim', 150132, 'react developer ' ]
+// console.log(allValues)
 
