@@ -23,4 +23,54 @@ const ByePhone  = taka =>{
     return `you have bye a ${brand} phone`;
 }
 
-console.log(ByePhone(2658));
+// console.log(ByePhone(2658));
+
+
+
+/*************** Arrow  function and this keyward ************ */
+
+const JavaScript = {
+    name : " Javascript",
+    lib  :['react','vue','angular'],
+
+
+    print : function(){
+        // console.log(this);
+        this.lib.forEach(item=>{
+        console.log(`I am ${this.name} I love ${item}`);
+        })
+       
+    },
+
+
+          print2 : ()=>{
+        console.log(this.name);  // this is used in window 
+        this.lib.forEach(item=>{
+        console.log(`I am ${this.name} I love ${item}`);  // get error 
+        })
+       
+           }
+
+}
+
+JavaScript.print()
+
+
+
+
+const myObj = {
+  name: "John",
+  sayName: function() {
+    console.log(this.name);
+  },
+  sayNameArrow: () => {
+    console.log(this.name);
+  }
+};
+
+myObj.sayName(); // Output: John
+myObj.sayNameArrow(); // Output: undefined
+
+
+
+// using arrow function this is known in current property it is not known this 
