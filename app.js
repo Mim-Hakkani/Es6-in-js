@@ -146,6 +146,12 @@ const conNum1 = [1,2,3]
 const conNum2 = [4,5,6]
 
 const Concatination = conNum1.concat(conNum2)
-console.log(Concatination)
+// console.log(Concatination)  output :: [1,2,3,4,5,6]
 
 
+
+const pushNumber = [1,2,3]
+const pushResult = pushNumber.push(4,5,6)
+const pushResult2 = pushNumber.push("mim")
+
+console.log(pushNumber)
