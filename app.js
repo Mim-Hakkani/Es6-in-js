@@ -78,4 +78,11 @@ myObj.sayNameArrow(); // Output: undefined
 
 /******* Check truthy and falsy value  ******** */
 
-const falsy = [false,NAN,undefined,"",0,null]
+// const falsy = [false,NAN,undefined,"",0,null]
+
+
+/**** ternary operator  */
+
+let adult = 18 ;
+
+console.log(adult>18 ? "Adult " : "Children")
