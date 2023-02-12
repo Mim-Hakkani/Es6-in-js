@@ -135,9 +135,9 @@ const resultSlice = NumberSlice.slice(1,4);
 
 
 const NumberSplice = [1,5,6,7,8,4]
-const resultSplice = NumberSplice.splice(1,2);
+const resultSplice = NumberSplice.splice(1,2,3);
 //    splice(startIndex, number_of_removeItem,ifIwant_to_be_addItem)
-console.log(resultSplice);
-console.log(NumberSplice);
+console.log(resultSplice); // output :: [5,6]
+console.log(NumberSplice); // output :: [1,3,7,8,4]
 
 
