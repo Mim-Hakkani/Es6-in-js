@@ -137,7 +137,15 @@ const resultSlice = NumberSlice.slice(1,4);
 const NumberSplice = [1,5,6,7,8,4]
 const resultSplice = NumberSplice.splice(1,2,3);
 //    splice(startIndex, number_of_removeItem,ifIwant_to_be_addItem)
-console.log(resultSplice); // output :: [5,6]
-console.log(NumberSplice); // output :: [1,3,7,8,4]
+// console.log(resultSplice); // output :: [5,6]
+// console.log(NumberSplice); // output :: [1,3,7,8,4]
+
+
+
+const conNum1 = [1,2,3]
+const conNum2 = [4,5,6]
+
+const Concatination = conNum1.concat(conNum2)
+console.log(Concatination)
 
 
