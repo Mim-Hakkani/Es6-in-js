@@ -74,3 +74,8 @@ myObj.sayNameArrow(); // Output: undefined
 
 
 // using arrow function this is known in current property it is not known this 
+
+
+/******* Check truthy and falsy value  ******** */
+
+const falsy = [false,NAN,undefined,"",0,null]
