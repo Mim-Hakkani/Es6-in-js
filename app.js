@@ -37,7 +37,7 @@ const JavaScript = {
     print : function(){
         // console.log(this);
         this.lib.forEach(item=>{
-        console.log(`I am ${this.name} I love ${item}`);
+        // console.log(`I am ${this.name} I love ${item}`);
         })
        
     },
@@ -46,7 +46,7 @@ const JavaScript = {
           print2 : ()=>{
         console.log(this.name);  // this is used in window 
         this.lib.forEach(item=>{
-        console.log(`I am ${this.name} I love ${item}`);  // get error 
+        // console.log(`I am ${this.name} I love ${item}`);  // get error 
         })
        
            }
@@ -61,10 +61,10 @@ JavaScript.print()
 const myObj = {
   name: "John",
   sayName: function() {
-    console.log(this.name);
+    // console.log(this.name);
   },
   sayNameArrow: () => {
-    console.log(this.name);
+    // console.log(this.name);
   }
 };
 
@@ -85,4 +85,59 @@ myObj.sayNameArrow(); // Output: undefined
 
 let adult = 18 ;
 
-console.log(adult>18 ? "Adult " : "Children")
+// console.log(adult>18 ? "Adult " : "Children")
+
+/************************** array find  ****************************/
+
+let findNumber = [1,2,5,4,7,89,5]
+ const search = findNumber.find((item,index,arr)=>item<7)
+
+//  console.log(search);
+
+ /************************** array find  ****************************/
+
+let  nuMber = [1,2,5,4,7,89,5]
+ const sEarch = nuMber.findIndex((item,index,arr)=>item===7)
+
+//  console.log(sEarch);
+
+
+ /************************** array filter  ****************************/
+
+let  nuMBer = [1,2,5,4,7,89,5]
+ const FilterItem = nuMBer.filter((item,index,arr)=>item<=7)
+
+//  console.log(FilterItem);
+
+
+ /************************** array map  ****************************/
+
+let  arrayMap = [1,2,5,4,7,89,5]
+ const mapItem = arrayMap.map((item,index,arr)=>item<=7 && index) // return something 
+
+
+  /********************** array forEach   ********************/ 
+
+ const forEachItem = arrayMap.forEach((item,index,arr)=>item<=7) // not return something 
+
+//  console.log(mapItem); 
+//  [
+//   0, 1, 2,
+//   3, 4, false,
+//   6
+// ]
+//  console.log(forEachItem); // undefined 
+
+
+const NumberSlice = [1,5,6,7,8,4]
+const resultSlice = NumberSlice.slice(1,4);
+// console.log(resultSlice); // output :: 5,6,7
+
+
+const NumberSplice = [1,5,6,7,8,4]
+const resultSplice = NumberSplice.splice(1,2);
+//    splice(startIndex, number_of_removeItem,ifIwant_to_be_addItem)
+console.log(resultSplice);
+console.log(NumberSplice);
+
+
