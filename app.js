@@ -154,4 +154,17 @@ const pushNumber = [1,2,3]
 const pushResult = pushNumber.push(4,5,6)
 const pushResult2 = pushNumber.push("mim")
 
-console.log(pushNumber)
+// console.log(pushNumber)
+
+
+/************************ Array Reduce Method ********************* */
+const ReduceNumber = [1,2,3,4,5]
+ const Summation = ReduceNumber.reduce((pre,curr)=>{
+ return pre+curr;
+ })
+
+//  console.log(Summation)
+
+
+
+
